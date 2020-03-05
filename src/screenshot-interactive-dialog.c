@@ -375,6 +375,8 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   gtk_widget_show (radio);
 
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio), TRUE);
+
   /** Grab after delay **/
   delay_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
   gtk_box_pack_start (GTK_BOX (vbox), delay_hbox, FALSE, FALSE, 0);
